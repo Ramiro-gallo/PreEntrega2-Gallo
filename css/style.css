@@ -223,6 +223,9 @@ li{
 section:not(.hero-section){
     padding: .2em 0;
 }
+.form-control, .form-select, .form-label{
+    margin-bottom: .8em;
+}
 /* FIN UTILITY CLASSES */
 body{
     font-family: var(--ff-primary);
@@ -230,51 +233,42 @@ body{
     color: var(--clr-primary-600);
 }
 /* INICIO HEADER */
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.8em 0.6em;
-    font-weight: var(--fw-xregular);
+.nav-link{
+    background-image: linear-gradient(90deg, var(--clr-primary-400),var(--clr-primary-600));
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: 400ms;
 }
-header div{
-    display: flex;
+.nav-link:hover{
+    color: var(--clr-primary-600);
+    background-size: 100% 3px;
 }
-header div *{
-    padding: 0 0.25em;
+.dropdown-item{
+    background-image: linear-gradient(90deg, var(--clr-primary-400),var(--clr-primary-600));
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: 500ms;
 }
-.fa-house{
-    border: 2px solid var(--clr-neutral-100);
-    border-radius: 100%;
-    padding: .25em;
+.dropdown-item:hover{
+    color: var(--clr-primary-600);
+    background-size: 90% 3px;
 }
-header a{
-    align-self: center;
+.navbar-brand{
+    background-image: linear-gradient(90deg, var(--clr-primary-400),var(--clr-primary-600));
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: 500ms;
 }
-header nav ul{
-    padding: 0;
-    margin: 0;
+.navbar-brand:hover{
+    color: var(--clr-primary-600);
+    background-size: 100% 3px;
 }
-header nav ul li{
-    display: inline;
-    margin: 0 .6em 0 0;
+.navbar-toggler:focus{
+    box-shadow: none;
 }
-.fa-bars{
-    justify-self: right;
-    display: none;
-}
-@media screen and (max-width:719px) {
-    header nav ul {
-        display: none;
-    }
-    .fa-bars{
-        display: block;
-    }
-}
-@media screen and (max-width:377px) {
-    #logo-title{display: none;}
-}
-
 /* FIN HEADER */
 /* HERO SECTION */
 
@@ -419,3 +413,26 @@ footer .fa-brands{
 #bondiola{
     object-position: top;
 }
+/* FIN MENU */
+/* RECLAMOS */
+.complaints-form-wrapper{
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+.submit{
+    width: 100%;
+    background-color: var(--clr-primary-600);
+    margin-top: 1em;
+    color: var(--clr-neutral-100);
+}
+/* FIN RECLAMOS */
+/* RESERVAS */
+.reservation-page-wrapper{
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+/* FIN RESERVAS */

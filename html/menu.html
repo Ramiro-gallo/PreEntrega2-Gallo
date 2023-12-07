@@ -9,28 +9,45 @@
     <script src="https://kit.fontawesome.com/8898244d6b.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Brunchaus Bakery | Inicio</title>
+    <title>Brunchaus Bakery | Menú</title>
 </head>
 <body>
     <!-- INICIO HEADER INICIO HEADER INICIO HEADER INICIO HEADER -->
-    <header class="bg-primary-600 text-neutral-100 fs-slightly-bigger">
-        <div class="logo-container">
-            <a href="#home-top">
-                <i class="fa-solid fa-house"></i>
-            </a>
-            <a id="logo-title" href="#home-top">Brunchaus Bakery</a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Menú</a></li>
-                <li><a href="">Local</a></li>
-                <li><a href="">Reservas</a></li>
-                <li><a href="">Reclamos</a></li>
-            </ul>
-        </nav>
-        <i class="fa-solid fa-bars"></i>
-
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Brunchaus Bakery.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Inicio
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html#home-top">Inicio</a></li>
+                                <li><a class="dropdown-item" href="index.html#product-info">Producto</a></li>
+                                <li><a class="dropdown-item" href="index.html#faq">Preguntas frecuentes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="local.html">Local</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservas.html">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reclamos.html">Reclamos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
     </header>
     <!-- FIN HEADER FIN HEADER FIN HEADER FIN HEADER -->
     <main>
