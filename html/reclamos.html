@@ -50,29 +50,29 @@
     </header>
     <main>
         <div class="complaints-form-wrapper bg-primary-300">
-            <h1 class="heading">Reclamos</h1>
-            <h3 class="heading subheading">Lamentamos profundamente cualquier tipo de molestia ocasionada. Rellená este formulario para que podamos darte una respuesta lo antes posible.</h3>
+            <h1 class="heading">Reclamos.</h1>
+            <h3 class="heading fs-slightly-bigger">Lamentamos profundamente cualquier tipo de molestia ocasionada. Rellená este formulario para que podamos darte una respuesta lo antes posible.</h3>
             <form class="complaints-form" action="" method="post">
                 <label class="form-label" for="name">Nombre Completo:</label>
-                    <input type="text" id="name" class="form-control" placeholder="Ingresá tu nombre" required></input>
+                    <input required type="text" id="name" class="form-control" placeholder="Ingresá tu nombre" required></input>
                 <label class="form-label" for="email">Email:</label>
-                    <input type="email" id="email" class="form-control" placeholder="Ingresá tu Email" required></input> 
+                    <input required type="email" id="email" class="form-control" placeholder="Ingresá tu Email" required></input> 
                 <label class="form-label" for="date">Fecha en la que visitaste el local:</label>
-                    <input type="date" name="date" class="form-control"></input>
-                <label class="form-label" for="textarea"></label>
-                    <textarea class="form-control" name="textarea" id="textarea" cols="30" rows="5" required></textarea>
-                <input class="btn submit" type="submit" name="submit" value="Enviar">
+                    <input required type="date" name="date" class="form-control"></input>
+                <label class="form-label" for="textarea">Aclaranos lo sucedido:</label>
+                    <textarea class="form-control" name="textarea" id="textarea" cols="30" rows="5" required placeholder="Mi problema fue que..."></textarea>
+                <input required class="btn btn-primary text-neutral-900 submit" type="submit" name="submit" value="Enviar">
             </form>
         </div>
     </main>
-    <footer class="bg-primary-600 text-neutral-100">
-        <h2 class="fw-semi-bold fs-secondary-heading">Unite a esta familia. <br> <span class="subheading">Te estamos esperando.</span></h2>
+    <footer class="bg-primary-600 text-neutral-900">
+        <h2 class="fw-semi-bold fs-secondary-heading">Unite a esta familia. <br> <span class="fs-slightly-bigger">Te estamos esperando.</span></h2>
         <ul>
-            <li><a class="button bg-neutral-100 text-primary-800 fs-slightly-bigger" href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
-            <li><a class="button bg-neutral-100 text-primary-800 fs-slightly-bigger" href=""><i class="fa-brands fa-whatsapp"></i>Whatsapp</a></li>
-            <li><a class="button bg-neutral-100 text-primary-800 fs-slightly-bigger" href=""><i class="fa-brands fa-product-hunt"></i>PedidosYa</a></li>
+            <li><a class="btn btn-primary fs-slightly-bigger text-neutral-900" href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+            <li><a class="btn btn-primary fs-slightly-bigger text-neutral-900" href=""><i class="fa-brands fa-whatsapp"></i>Whatsapp</a></li>
+            <li><a class="btn btn-primary fs-slightly-bigger text-neutral-900" href=""><i class="fa-brands fa-product-hunt"></i>PedidosYa</a></li>
         </ul>
-        <div class="talon bg-primary-800 fs-small">
+        <div class="talon bg-primary-800 text-neutral-100 fs-small">
             <a href="#">Copyright &copy; 2023 Brunchaus SRL</a>
             <a href="#">Términos y condiciones</a>
         </div>

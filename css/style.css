@@ -1,15 +1,16 @@
 :root{
-    --clr-primary-300:#CCD5AE;
+    --clr-primary-300:#CED6B0;
     --clr-primary-400:#B3C186;
-    --clr-primary-600:#526a40;
-    --clr-primary-800:#1b300a;
+    --clr-primary-600:#737C51;
+    --clr-primary-800:#656E49;
 
 
     --clr-accent-100:#8c7fb9;
-    --clr-accent-500:#605375;
+    --clr-accent-500:#9378E2;
 
-    --clr-neutral-100:#fbfae5;
-    --clr-neutral-900:#1D1A23;
+    --clr-neutral-100:#F9F8E3;
+    --clr-neutral-400:#CED1B1;
+    --clr-neutral-900:#201F20;
 
     --ff-primary:"Be Vietnam Pro", sans-serif;
 
@@ -164,6 +165,9 @@ li{
 .bg-neutral-100{
     background-color: var(--clr-neutral-100);
 }
+.bg-neutral-400{
+    background-color: var(--clr-neutral-400);
+}
 .bg-neutral-900{
     background-color:var(--clr-neutral-900);
 }
@@ -212,9 +216,8 @@ li{
 }
 .heading{
     text-align: center;
-    margin: 1.5em 1em;
+    margin: 1.3em 1em;
     font-weight: var(--fw-bold);
-
 }
 .subheading{
     font-size: var(--fs-600);
@@ -224,13 +227,13 @@ section:not(.hero-section){
     padding: .2em 0;
 }
 .form-control, .form-select, .form-label{
-    margin-bottom: .8em;
+    margin-bottom: .5em;
 }
 /* FIN UTILITY CLASSES */
 body{
     font-family: var(--ff-primary);
     background-color: var(--clr-neutral-100);
-    color: var(--clr-primary-600);
+    color: var(--clr-neutral-900);
 }
 /* INICIO HEADER */
 .nav-link{
@@ -332,6 +335,12 @@ body{
     border: 3px solid;
     border-radius: 50%;
     padding: .8rem;
+    transition: 500ms;
+}
+.fa-cookie-bite:hover, .fa-heart:hover, .fa-mug-hot:hover{
+    color: var(--clr-accent-500);
+    transform: rotate(10deg);
+    font-size: 2.2rem;
 }
 @media screen and (max-width:719px) {
     .product-info-card{
@@ -345,17 +354,20 @@ body{
 }   
 /* FIN PRODUCT INFO */
 /* INICIO FAQ */
- 
+#faq{
+    margin-top: 2rem;
+} 
 .accordion{
     max-width: 80%;
     margin: 2rem auto;
 }
+
 /* FIN FAQ */
 /* FIN PAGE CONTENT */
 /* FOOTER */
 footer h2{
     text-align: center;
-    padding: 1em 0 1.5em 0;
+    padding: 1em 0;
 }
 footer ul{
     display: flex;
@@ -390,7 +402,7 @@ footer .fa-brands{
 
 /* MENU */
 .menu-section{
-    margin: 2em 0;
+    margin: 5em 0;
 }
 .card-wrapper{
     display: flex;
@@ -423,9 +435,7 @@ footer .fa-brands{
 }
 .submit{
     width: 100%;
-    background-color: var(--clr-primary-600);
     margin-top: 1em;
-    color: var(--clr-neutral-100);
 }
 /* FIN RECLAMOS */
 /* RESERVAS */
@@ -436,3 +446,56 @@ footer .fa-brands{
     border-radius: .5rem;
 }
 /* FIN RESERVAS */
+/* LOCAL */
+#local-page-content{
+    margin: 5rem auto;
+    width: 90%;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+.local-inner-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: .5rem;
+    padding: 2rem;
+}
+@media screen and (max-width:719px) {
+    .local-inner-container{
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+    .local-info-wrapper h4{
+        display: none;
+    }
+}
+.local-info-wrapper{
+    display: flex;
+    gap: 2rem;
+}
+.vertical{
+    writing-mode: vertical-lr;
+}
+.carousel-item{
+    height: 85vh;
+}
+.carousel-item img{
+    min-height: 100%;
+    object-fit: cover;
+}
+.local-info-inner h3{
+    margin-bottom: 1rem;
+}
+.gradient-accent{
+    background-image: linear-gradient(var(--clr-accent-100),var(--clr-accent-500));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-accent-word{
+    background-image: linear-gradient(90deg, var(--clr-accent-100),var(--clr-accent-500));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: var(--fw-semi-bold);
+}
+
