@@ -1,0 +1,115 @@
+.text-primary-300{
+    color: $clr-primary-300;
+}
+.text-primary-400{
+    color:$clr-primary-400;
+}
+.text-primary-600{
+    color:$clr-primary-600;
+}
+.text-primary-800{
+    color:$clr-primary-800;
+}
+.text-neutral-100{
+    color: $clr-neutral-100;
+}
+.text-neutral-900{
+    color:$clr-neutral-900;
+}
+.text-accent-100{
+    color:$clr-accent-100
+}
+.text-accent-500{
+    color:$clr-accent-500
+}
+
+.bg-primary-300{
+    background-color: $clr-primary-300;
+}
+.bg-primary-400{
+    background-color:$clr-primary-400;
+}
+.bg-primary-600{
+    background-color:$clr-primary-600;
+}
+.bg-primary-800{
+    background-color:$clr-primary-800;
+}
+.bg-neutral-100{
+    background-color: $clr-neutral-100;
+}
+.bg-neutral-400{
+    background-color: $clr-neutral-400;
+}
+.bg-neutral-900{
+    background-color:$clr-neutral-900;
+}
+.bg-accent-100{
+    background-color:$clr-accent-100;
+}
+.bg-accent-500{
+    background-color:$clr-accent-500;
+}
+
+.fw-bold{
+    font-weight: $fw-bold;
+}
+.fw-semi-bold{
+    font-weight: $fw-semi-bold;
+}
+.fw-xregular{
+    font-weight: $fw-xregular;
+}
+.fw-regular{
+    font-weight: $fw-regular;
+}
+
+.fs-primary-heading{
+    font-size: $fs-800;
+}
+.fs-secondary-heading{
+    font-size: $fs-700;
+}
+.fs-bigger{
+    font-size: $fs-600;
+}
+.fs-slightly-bigger{
+    font-size: $fs-500;
+}
+.fs-regular{
+    font-size: $fs-400;
+}
+.fs-small{
+    font-size: $fs-300;
+}
+
+.button{
+    border-radius: 0.35rem;
+    padding: 0.4em 0.8em;
+}
+.heading{
+    text-align: center;
+    margin: 1.3em 1em;
+    font-weight: $fw-bold;
+}
+.subheading{
+    font-size: $fs-600;
+    font-weight: $fw-semi-bold;  
+}
+section:not(.hero-section){
+    padding: .2em 0;
+}
+.form-control, .form-select, .form-label{
+    margin-bottom: .5em;
+}
+.centered{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.submit{
+    width: 100%;
+    margin-top: 1em;
+}
+.vertical{
+    writing-mode: vertical-lr;
+}

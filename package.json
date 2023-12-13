@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.2",
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.5"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/styles.scss css/styles.css --watch"
+  }
+}

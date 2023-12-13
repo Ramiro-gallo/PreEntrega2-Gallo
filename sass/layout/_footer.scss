@@ -1,0 +1,38 @@
+footer{
+    h2{
+        text-align: center;
+        padding: 1em 0;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding:0;
+        li{
+            padding: 1em;
+            display: flex;
+        }
+    }
+    .fa-brands{
+        margin-right: .5em;
+    }
+} 
+@media screen and (max-width:719px) {
+    footer{
+        h2{
+            padding: 1em 0;
+        }
+        ul {
+            padding: 0;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    } 
+}   
+.talon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}

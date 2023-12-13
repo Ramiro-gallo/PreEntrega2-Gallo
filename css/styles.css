@@ -1,0 +1,411 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth; }
+
+/* Remove default margin in favour of better control in authored CSS */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit; }
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5; }
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1; }
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance; }
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration: none;
+  color: currentColor; }
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block; }
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit; }
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em; }
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex; }
+
+li {
+  list-style-type: none; }
+
+.text-primary-300 {
+  color: #CED6B0; }
+
+.text-primary-400 {
+  color: #B3C186; }
+
+.text-primary-600 {
+  color: #737C51; }
+
+.text-primary-800 {
+  color: #656E49; }
+
+.text-neutral-100 {
+  color: #F9F8E3; }
+
+.text-neutral-900 {
+  color: #201F20; }
+
+.text-accent-100 {
+  color: #8c7fb9; }
+
+.text-accent-500 {
+  color: #9378E2; }
+
+.bg-primary-300 {
+  background-color: #CED6B0; }
+
+.bg-primary-400 {
+  background-color: #B3C186; }
+
+.bg-primary-600 {
+  background-color: #737C51; }
+
+.bg-primary-800 {
+  background-color: #656E49; }
+
+.bg-neutral-100 {
+  background-color: #F9F8E3; }
+
+.bg-neutral-400 {
+  background-color: #CED1B1; }
+
+.bg-neutral-900 {
+  background-color: #201F20; }
+
+.bg-accent-100 {
+  background-color: #8c7fb9; }
+
+.bg-accent-500 {
+  background-color: #9378E2; }
+
+.fw-bold {
+  font-weight: 700; }
+
+.fw-semi-bold {
+  font-weight: 600; }
+
+.fw-xregular {
+  font-weight: 500; }
+
+.fw-regular {
+  font-weight: 400; }
+
+.fs-primary-heading {
+  font-size: 2.5rem; }
+
+.fs-secondary-heading {
+  font-size: 2.15rem; }
+
+.fs-bigger {
+  font-size: 1.75rem; }
+
+.fs-slightly-bigger {
+  font-size: 1.25rem; }
+
+.fs-regular {
+  font-size: 1rem; }
+
+.fs-small {
+  font-size: 0.8rem; }
+
+.button {
+  border-radius: 0.35rem;
+  padding: 0.4em 0.8em; }
+
+.heading {
+  text-align: center;
+  margin: 1.3em 1em;
+  font-weight: 700; }
+
+.subheading {
+  font-size: 1.75rem;
+  font-weight: 600; }
+
+section:not(.hero-section) {
+  padding: .2em 0; }
+
+.form-control, .form-select, .form-label {
+  margin-bottom: .5em; }
+
+.centered {
+  text-align: center;
+  margin-bottom: 2rem; }
+
+.submit {
+  width: 100%;
+  margin-top: 1em; }
+
+.vertical {
+  writing-mode: vertical-lr; }
+
+html {
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: #F9F8E3;
+  color: #201F20; }
+
+.nav-link {
+  background-image: linear-gradient(90deg, #B3C186, #737C51);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: 400ms; }
+  .nav-link:hover {
+    color: #737C51;
+    background-size: 100% 3px; }
+
+.dropdown-item {
+  background-image: linear-gradient(90deg, #B3C186, #737C51);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: 500ms; }
+  .dropdown-item:hover {
+    color: #737C51;
+    background-size: 90% 3px; }
+
+.navbar-brand {
+  background-image: linear-gradient(90deg, #B3C186, #737C51);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: 500ms; }
+  .navbar-brand:hover {
+    color: #737C51;
+    background-size: 100% 3px; }
+
+.navbar-toggler:focus {
+  box-shadow: none; }
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh;
+  isolation: isolate;
+  overflow: hidden; }
+  .hero-section * {
+    grid-area: 1/1; }
+
+.hero-img-container {
+  filter: brightness(30%) grayscale(20%);
+  z-index: -1;
+  background-image: url(../assets/img_brunch.jpg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.hero-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  margin: auto; }
+
+@media screen and (max-width: 719px) {
+  .hero-content-container {
+    width: 80%; } }
+
+.hero-content-container * {
+  margin: 1.2rem 0; }
+
+.hero-section-title {
+  text-align: center; }
+
+.hero-section-subtitle {
+  text-align: center;
+  width: 80%; }
+
+.product-info-card {
+  max-width: 60%;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  padding: 1rem; }
+  .product-info-card .fa-solid {
+    font-size: 2rem;
+    margin: 1rem;
+    border: 3px solid;
+    border-radius: 50%;
+    padding: .8rem;
+    transition: 500ms; }
+
+.fa-cookie-bite:hover, .fa-heart:hover, .fa-mug-hot:hover {
+  color: #9378E2;
+  transform: rotate(10deg);
+  font-size: 2.2rem; }
+
+@media screen and (max-width: 719px) {
+  .product-info-card {
+    flex-direction: column;
+    text-align: center;
+    max-width: 80%; }
+    .product-info-card .fa-solid {
+      margin-bottom: 2rem; } }
+
+#faq {
+  margin-top: 2rem; }
+
+.accordion {
+  max-width: 80%;
+  margin: 2rem auto; }
+
+footer h2 {
+  text-align: center;
+  padding: 1em 0; }
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0; }
+  footer ul li {
+    padding: 1em;
+    display: flex; }
+
+footer .fa-brands {
+  margin-right: .5em; }
+
+@media screen and (max-width: 719px) {
+  footer h2 {
+    padding: 1em 0; }
+  footer ul {
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; } }
+
+.talon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem; }
+
+.menu-section {
+  margin: 5em 0; }
+
+.card-wrapper {
+  display: flex; }
+
+.card {
+  margin: 0 .8em 4em .8em;
+  width: calc(100%/3); }
+
+.card-img-wrapper {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.card-img-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; }
+
+#bondiola {
+  object-position: top; }
+
+.complaints-form-wrapper {
+  width: 70%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: .5rem; }
+
+@media screen and (max-width: 719px) {
+  .complaints-form-wrapper {
+    width: 80%; } }
+
+.reservation-page-wrapper {
+  width: 70%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: .5rem; }
+
+@media screen and (max-width: 719px) {
+  .reservation-page-wrapper {
+    width: 80%; } }
+
+#local-page-content {
+  margin: 5rem auto;
+  width: 90%;
+  border-radius: .5rem;
+  padding: 1rem; }
+
+.local-inner-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: .5rem;
+  padding: 2rem; }
+
+@media screen and (max-width: 719px) {
+  .local-inner-container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem; }
+  .local-info-wrapper h4 {
+    display: none; } }
+
+.local-info-wrapper {
+  display: flex;
+  gap: 2rem; }
+
+.carousel-item {
+  height: 85vh; }
+  .carousel-item img {
+    min-height: 100%;
+    object-fit: cover; }
+
+.local-info-inner h3 {
+  margin-bottom: 1rem; }
+
+.gradient-accent {
+  background-image: linear-gradient(#8c7fb9, #9378E2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.gradient-accent-word {
+  background-image: linear-gradient(90deg, #8c7fb9, #9378E2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600; }

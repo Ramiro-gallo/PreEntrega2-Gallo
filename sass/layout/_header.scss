@@ -1,0 +1,36 @@
+.nav-link{
+    background-image: linear-gradient(90deg, $clr-primary-400 , $clr-primary-600);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: 400ms;
+    &:hover{
+        color: $clr-primary-600;
+        background-size: 100% 3px;
+    }
+}
+.dropdown-item{
+    background-image: linear-gradient(90deg, $clr-primary-400 , $clr-primary-600);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: 500ms;
+    &:hover{
+        color: $clr-primary-600;
+        background-size: 90% 3px;
+    }
+}
+.navbar-brand{
+    background-image: linear-gradient(90deg, $clr-primary-400 , $clr-primary-600);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: 500ms;
+    &:hover{
+        color: $clr-primary-600;
+        background-size: 100% 3px;
+    }
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}

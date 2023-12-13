@@ -1,0 +1,43 @@
+.hero-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh;
+    isolation: isolate;
+    overflow: hidden;
+    *{
+        grid-area: 1/1;
+    }
+}
+.hero-img-container{
+    filter: brightness(30%) grayscale(20%);
+    z-index: -1;
+    background-image: url(../assets/img_brunch.jpg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+@media screen and (max-width:719px) {
+    .hero-content-container{width: 80%;   
+}
+}
+.hero-content-container{
+    *{
+        margin: 1.2rem 0;
+    }
+}
+.hero-section-title{
+    text-align: center;
+}
+.hero-section-subtitle{
+    text-align: center;
+    width: 80%;
+}

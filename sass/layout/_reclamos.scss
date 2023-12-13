@@ -1,0 +1,11 @@
+.complaints-form-wrapper{
+    width: 70%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+@media screen and (max-width:719px) {
+    .complaints-form-wrapper{
+        width: 80%;
+    }
+}
