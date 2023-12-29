@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de reclamos de Brunchaus, comercio gastronómico ubicado en Villa Urquiza, para ocasiones de disconformidad por parte de los clientes, reclamos y quejas">
+    <meta name="keywords" content="Brunch,Brunchaus,Restaurant,Cafetería,Café de Especialidad,Villa Urquiza,CABA,Reclamos,Quejas,Problemas,Pastelería Artesanal,Pastelería">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -10,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../assets/favicon-brunch.png" type="image/x-icon">
-    <title>Brunchaus Bakery | Local</title>
+    <title>Brunchaus Bakery | Reclamos</title>
 </head>
 <body>
     <header>
@@ -24,7 +26,7 @@
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Inicio
+                            Inicio
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="index.html#home-top">Inicio</a></li>
@@ -50,56 +52,30 @@
         </nav>        
     </header>
     <main>
-        <section id="local-page-content" class="bg-primary-300">
-            <h1 class="heading">Nuestro Local.</h1>
-            <div class="local-inner-container">
-                <div class="map-wrapper">
-                    <div id="carousel-local" class="carousel-dark carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carousel-local" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carousel-local" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carousel-local" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="../assets/img-cafeteria-1.jpg" class="d-block w-100" alt="imagen del local">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../assets/img-cafeteria-2.jpg" class="d-block w-100" alt="imagen del local">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../assets/img-cafeteria-3.jpg" class="d-block w-100" alt="imagen del local">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-local" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-local" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>     
-                </div>
-                <div class="local-info-wrapper">
-                    <h4 class="vertical fs-slightly-bigger fw-regular gradient-accent">El lugar que buscabas. La experiencia que <strong>merecés.</strong></h2>
-                    <div class="local-info-inner">
-                        <h3 class="fs-secondary-heading">Nuestra casa. <strong>Tú casa.</strong></h3>
-                        <p class="fs-slightly-bigger">Ubicado en el corazón del barrio porteño de Villa Urquiza, nuestro local fue diseñado meticulosamente con el fin de ser el espacio perfecto para que disfrutes de sensaciones únicas. Cómodos asientos, sobria ambientación, música estimulante y personal calificado son algunos de los principales atributos que caracterizan este ambiente ideado con el único y exclusivo fin de complementar nuestra elevada propuesta gastronómica. ¿Estás preparado para experimentar la calidez de un espacio construido a tu medida? <span class="gradient-accent-word">Visitanos.</span></p>
-                    </div>
-                </div>
-            </div>    
-        </section>    
-        <!-- Tal vez el día de mañana agregarle un carrusel de fotos del local. -->
+        <div class="complaints-form-wrapper bg-primary-300">
+            <h1 class="heading">Reclamos.</h1>
+            <h3 class="fs-slightly-bigger centered fw-semi-bold">Lamentamos profundamente cualquier tipo de molestia ocasionada. Rellená este formulario para que podamos darte una respuesta lo antes posible.</h3>
+            <form class="complaints-form" action="" method="post">
+                <label class="form-label" for="name">Nombre Completo:</label>
+                    <input required type="text" id="name" class="form-control" placeholder="Ingresá tu nombre" required></input>
+                <label class="form-label" for="email">Email:</label>
+                    <input required type="email" id="email" class="form-control" placeholder="Ingresá tu Email" required></input> 
+                <label class="form-label" for="date">Fecha en la que visitaste el local:</label>
+                    <input required type="date" name="date" class="form-control"></input>
+                <label class="form-label" for="textarea">Aclaranos lo sucedido:</label>
+                    <textarea class="form-control" name="textarea" id="textarea" cols="30" rows="5" required placeholder="Mi problema fue que..."></textarea>
+                <input required class="btn btn-primary text-neutral-900 submit" type="submit" name="submit" value="Enviar">
+            </form>
+        </div>
     </main>
-    <footer class="bg-primary-600 text-neutral-900">
+    <footer class="bg-primary-400 text-neutral-900">
         <h2 class="fw-semi-bold fs-secondary-heading">Unite a esta familia. <br> <span class="fs-slightly-bigger">Te estamos esperando.</span></h2>
         <ul>
             <li><a class="btn btn-primary fs-slightly-bigger text-neutral-900" href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
             <li><a class="btn btn-primary fs-slightly-bigger text-neutral-900" href=""><i class="fa-brands fa-whatsapp"></i>Whatsapp</a></li>
             <li><a class="btn btn-primary fs-slightly-bigger text-neutral-900" href=""><i class="fa-brands fa-product-hunt"></i>PedidosYa</a></li>
         </ul>
-        <div class="talon bg-primary-800 text-neutral-100 fs-small">
+        <div class="talon bg-primary-600 text-neutral-100 fs-small">
             <a href="#">Copyright &copy; 2023 Brunchaus SRL</a>
             <a href="#">Términos y condiciones</a>
         </div>

@@ -69,7 +69,7 @@ li {
   color: #CED6B0; }
 
 .text-primary-400 {
-  color: #B3C186; }
+  color: #b3c08b; }
 
 .text-primary-600 {
   color: #737C51; }
@@ -93,7 +93,7 @@ li {
   background-color: #CED6B0; }
 
 .bg-primary-400 {
-  background-color: #B3C186; }
+  background-color: #b3c08b; }
 
 .bg-primary-600 {
   background-color: #737C51; }
@@ -182,7 +182,7 @@ html {
   color: #201F20; }
 
 .nav-link {
-  background-image: linear-gradient(90deg, #B3C186, #737C51);
+  background-image: linear-gradient(90deg, #b3c08b, #737C51);
   background-size: 0% 3px;
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -192,7 +192,7 @@ html {
     background-size: 100% 3px; }
 
 .dropdown-item {
-  background-image: linear-gradient(90deg, #B3C186, #737C51);
+  background-image: linear-gradient(90deg, #b3c08b, #737C51);
   background-size: 0% 3px;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -202,7 +202,7 @@ html {
     background-size: 90% 3px; }
 
 .navbar-brand {
-  background-image: linear-gradient(90deg, #B3C186, #737C51);
+  background-image: linear-gradient(90deg, #b3c08b, #737C51);
   background-size: 0% 3px;
   background-repeat: no-repeat;
   background-position: left bottom;
