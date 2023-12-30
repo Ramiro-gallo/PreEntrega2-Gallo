@@ -1,158 +1,158 @@
 
 /*------------------------------------
-- COLOR Primary
+- COLOR my-my-primary
 ------------------------------------*/
 
-$primary_t1: #8c7fb9;
-$primary_t2: #6e5ea6;
-$primary_t3: #e7e5f0;
-$primary_t4: #f6f5f9;
-$primary_t5: #4f437a;
-$primary_t6: #66569e;
-$primary_t7: #7767ac;
-$primary_t8: #3a3159;
-$primary_t9: #102102;
+$my_primary_t1: #8c7fb9;
+$my_primary_t2: #6e5ea6;
+$my_primary_t3: #e7e5f0;
+$my_primary_t4: #f6f5f9;
+$my_primary_t5: #4f437a;
+$my_primary_t6: #66569e;
+$my_primary_t7: #7767ac;
+$my_primary_t8: #3a3159;
+$my_primary_t9: #102102;
 
-$primary_shadow: rgba(140, 127, 185, 0.5);
-$primary_text_color_dark_bright: #212529;
+$my_primary_shadow: rgba(140, 127, 185, 0.5);
+$my_primary_text_color_dark_bright: #212529;
 
 
-.alert-Primary {
-  color: $primary_t5;
-  background-color: $primary_t9;
-  border-color: $primary_t4;
+.alert-my-primary {
+  color: $my_primary_t5;
+  background-color: $my_primary_t9;
+  border-color: $my_primary_t4;
 }
 
-.alert-Primary hr {
-  border-top-color: $primary_t3;
+.alert-my-primary hr {
+  border-top-color: $my_primary_t3;
 }
 
-.alert-Primary .alert-link {
-  color: $primary_t8;
+.alert-my-primary .alert-link {
+  color: $my_primary_t8;
 }
 
-.badge-Primary {
-  color: $primary_text_color_dark_bright;
-  background-color: $primary_t1;
+.badge-my-primary {
+  color: $my_primary_text_color_dark_bright;
+  background-color: $my_primary_t1;
 }
 
-.badge-Primary[href]:hover, .badge-Primary[href]:focus {
-  color: $primary_text_color_dark_bright;
-  background-color: $primary_t2;
+.badge-my-primary[href]:hover, .badge-my-primary[href]:focus {
+  color: $my_primary_text_color_dark_bright;
+  background-color: $my_primary_t2;
 }
 
-.bg-Primary {
-  background-color: $primary_t1 !important;
+.bg-my-primary {
+  background-color: $my_primary_t1 !important;
 }
 
-a.bg-Primary:hover, a.bg-Primary:focus,
-button.bg-Primary:hover,
-button.bg-Primary:focus {
-  background-color: $primary_t2 !important;
+a.bg-my-primary:hover, a.bg-my-primary:focus,
+button.bg-my-primary:hover,
+button.bg-my-primary:focus {
+  background-color: $my_primary_t2 !important;
 }
 
-.border-Primary {
-  border-color: $primary_t1 !important;
+.border-my-primary {
+  border-color: $my_primary_t1 !important;
 }
 
-.btn-Primary {
-  color: $primary_text_color_dark_bright;
-  background-color: $primary_t1;
-  border-color: $primary_t1;
+.btn-my-primary {
+  color: $my_primary_text_color_dark_bright;
+  background-color: $my_primary_t1;
+  border-color: $my_primary_t1;
 }
 
-.btn-Primary:hover {
-  color: $primary_text_color_dark_bright;
-  background-color: $primary_t7;
-  border-color: $primary_t2;
+.btn-my-primary:hover {
+  color: $my_primary_text_color_dark_bright;
+  background-color: $my_primary_t7;
+  border-color: $my_primary_t2;
 }
 
-.btn-Primary:focus, .btn-Primary.focus {
-  box-shadow: 0 0 0 0.2rem $primary_shadow;
+.btn-my-primary:focus, .btn-my-primary.focus {
+  box-shadow: 0 0 0 0.2rem $my_primary_shadow;
 }
 
-.btn-Primary.disabled, .btn-Primary:disabled {
-  color: $primary_text_color_dark_bright;
-  background-color: $primary_t1;
-  border-color: $primary_t1;
+.btn-my-primary.disabled, .btn-my-primary:disabled {
+  color: $my_primary_text_color_dark_bright;
+  background-color: $my_primary_t1;
+  border-color: $my_primary_t1;
 }
 
-.btn-Primary:not(:disabled):not(.disabled):active, .btn-Primary:not(:disabled):not(.disabled).active, .show > .btn-Primary.dropdown-toggle {
-  color: $primary_text_color_dark_bright;
-  background-color: $primary_t2;
-  border-color: $primary_t6;
+.btn-my-primary:not(:disabled):not(.disabled):active, .btn-my-primary:not(:disabled):not(.disabled).active, .show > .btn-my-primary.dropdown-toggle {
+  color: $my_primary_text_color_dark_bright;
+  background-color: $my_primary_t2;
+  border-color: $my_primary_t6;
 }
 
-.btn-Primary:not(:disabled):not(.disabled):active:focus, .btn-Primary:not(:disabled):not(.disabled).active:focus, .show > .btn-Primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem $primary_shadow;
+.btn-my-primary:not(:disabled):not(.disabled):active:focus, .btn-my-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-my-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem $my_primary_shadow;
 }
 
-.btn-outline-Primary {
-  color: $primary_t1;
+.btn-outline-my-primary {
+  color: $my_primary_t1;
   background-color: transparent;
-  border-color: $primary_t1;
+  border-color: $my_primary_t1;
 }
 
-.btn-outline-Primary:hover {
-  color: $primary_text_color_dark_bright;
-  background-color: $primary_t1;
-  border-color: $primary_t1;
+.btn-outline-my-primary:hover {
+  color: $my_primary_text_color_dark_bright;
+  background-color: $my_primary_t1;
+  border-color: $my_primary_t1;
 }
 
-.btn-outline-Primary:focus, .btn-outline-Primary.focus {
-  box-shadow: 0 0 0 0.2rem $primary_shadow;
+.btn-outline-my-primary:focus, .btn-outline-my-primary.focus {
+  box-shadow: 0 0 0 0.2rem $my_primary_shadow;
 }
 
-.btn-outline-Primary.disabled, .btn-outline-Primary:disabled {
-  color: $primary_t1;
+.btn-outline-my-primary.disabled, .btn-outline-my-primary:disabled {
+  color: $my_primary_t1;
   background-color: transparent;
 }
 
-.btn-outline-Primary:not(:disabled):not(.disabled):active, .btn-outline-Primary:not(:disabled):not(.disabled).active, .show > .btn-outline-Primary.dropdown-toggle {
-  color: $primary_text_color_dark_bright;
-  background-color: $primary_t1;
-  border-color: $primary_t1;
+.btn-outline-my-primary:not(:disabled):not(.disabled):active, .btn-outline-my-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-my-primary.dropdown-toggle {
+  color: $my_primary_text_color_dark_bright;
+  background-color: $my_primary_t1;
+  border-color: $my_primary_t1;
 }
 
-.btn-outline-Primary:not(:disabled):not(.disabled):active:focus, .btn-outline-Primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-Primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem $primary_shadow;
+.btn-outline-my-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-my-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-my-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem $my_primary_shadow;
 }
 
-.list-group-item-Primary {
-  color: $primary_t5;
-  background-color: $primary_t4;
+.list-group-item-my-primary {
+  color: $my_primary_t5;
+  background-color: $my_primary_t4;
 }
 
-.list-group-item-Primary.list-group-item-action:hover, .list-group-item-Primary.list-group-item-action:focus {
-  color: $primary_t5;
-  background-color: $primary_t3;
+.list-group-item-my-primary.list-group-item-action:hover, .list-group-item-my-primary.list-group-item-action:focus {
+  color: $my_primary_t5;
+  background-color: $my_primary_t3;
 }
 
-.list-group-item-Primary.list-group-item-action.active {
-  color: $primary_text_color_dark_bright;
-  background-color: $primary_t5;
-  border-color: $primary_t5;
+.list-group-item-my-primary.list-group-item-action.active {
+  color: $my_primary_text_color_dark_bright;
+  background-color: $my_primary_t5;
+  border-color: $my_primary_t5;
 }
 
-.table-Primary,
-.table-Primary > th,
-.table-Primary > td {
-  background-color: $primary_t4;
+.table-my-primary,
+.table-my-primary > th,
+.table-my-primary > td {
+  background-color: $my_primary_t4;
 }
 
-.table-hover .table-Primary:hover {
-  background-color: $primary_t3;
+.table-hover .table-my-primary:hover {
+  background-color: $my_primary_t3;
 }
 
-.table-hover .table-Primary:hover > td,
-.table-hover .table-Primary:hover > th {
-  background-color: $primary_t3;
+.table-hover .table-my-primary:hover > td,
+.table-hover .table-my-primary:hover > th {
+  background-color: $my_primary_t3;
 }
 
-.text-Primary {
-  color: $primary_t1 !important;
+.text-my-primary {
+  color: $my_primary_t1 !important;
 }
 
-a.text-Primary:hover, a.text-Primary:focus {
-  color: $primary_t2 !important;
+a.text-my-primary:hover, a.text-my-primary:focus {
+  color: $my_primary_t2 !important;
 }
